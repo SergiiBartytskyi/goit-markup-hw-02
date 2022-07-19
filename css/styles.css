@@ -48,9 +48,45 @@
 	--footer-color: #2f303a;
 	--link-color: rgba(255, 255, 255, 0.6);
 }
+body {
+	background-color: var(--primary-bg-color);
+	color: var(--primary-text-color);
+}
+
+.logo {
+	color: var(--accent-color);
+}
+.logo-head {
+	color: var(--logo-color);
+}
+.logo-foot {
+	color: var(--header-color);
+}
 
 ul {
 	list-style: none;
 }
 
 /* header */
+
+header {
+	background-color: var(--header-color);
+}
+
+.site-nav .link {
+	color: var(--secondary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+
+.info-nav .link {
+	color: var(--primary-text-color);
+}
+
+.info-nav .link:hover,
+.info-nav .link:focus {
+	color: var(--accent-color);
+}
