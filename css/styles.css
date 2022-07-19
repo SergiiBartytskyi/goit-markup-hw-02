@@ -1,6 +1,6 @@
 /* осн колір тексту #757575 */
 /* другорядний колір тексту #212121 */
-/* акцент #2196F3*/
+/* акцент #2196F3 */
 
 /* хедер */
 
@@ -37,6 +37,20 @@
 /* h #212121 */
 /* p #757575 */
 
+:root {
+	--primary-text-color: #757575;
+	--secondary-text-color: #212121;
+	--accent-color: #2196f3;
+	--logo-color: #000000;
+	--primary-bg-color: #f5f5f5;
+	--secondary-bg-color: #f5f4fa;
+	--header-color: #ffffff;
+	--footer-color: #2f303a;
+	--link-color: rgba(255, 255, 255, 0.6);
+}
+
 ul {
 	list-style: none;
 }
+
+/* header */
