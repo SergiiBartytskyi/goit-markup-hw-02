@@ -41,6 +41,7 @@
 	--primary-text-color: #212121;
 	--secondary-text-color: #757575;
 	--accent-color: #2196f3;
+	--button-color: #2196f3;
 	--logo-color: #000000;
 	--primary-bg-color: #ffffff;
 	--secondary-bg-color: #2f303a;
@@ -55,34 +56,42 @@ body {
 .logo {
 	color: var(--accent-color);
 }
-.logo-head {
+.header-logo {
 	color: var(--logo-color);
 }
-.logo-foot {
+.footer-logo {
 	color: var(--primary-bg-color);
 }
 
-ul {
+.list {
 	list-style: none;
+}
+
+.link {
+	text-decoration: none;
 }
 
 /* header */
 
-.site-nav .link {
-	color: var(--primary-text-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-list .link.current {
 	color: var(--accent-color);
 }
 
-.info-nav .link {
+.header-list .link {
+	color: var(--primary-text-color);
+}
+
+.header-list .link:hover,
+.header-list .link:focus {
+	color: var(--accent-color);
+}
+
+.header-contacts .link {
 	color: var(--secondary-text-color);
 }
 
-.info-nav .link:hover,
-.info-nav .link:focus {
+.header-contacts .link:hover,
+.header-contacts .link:focus {
 	color: var(--accent-color);
 }
 
