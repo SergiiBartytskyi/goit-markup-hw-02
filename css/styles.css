@@ -1,45 +1,8 @@
-/* осн колір тексту #757575 */
-/* другорядний колір тексту #212121 */
-/* акцент #2196F3 */
-
-/* хедер */
-
-/* logo #000000, #2196F3 */
-/* посилання на сторінки #212121   і #2196F3  */
-
-/* пошта і телефон   #757575 і #2196F3  */
-
-/* main */
-
-/* hero #FFFFFF */
-/* button #2196F3 , text #FFFFFF */
-
-/* section  */
-/* h #212121 */
-/* p #757575 */
-
-/* футер */
-/* logo #FFFFFF, #2196F3 */
-/* фізичний адрес футер   #FFFFFF */
-/* адрес футер  rgba(255, 255, 255, 0.6) */
-
-/* колір фону #F5F5F5 */
-/* другорядний колір фону  #F5F4FA */
-/* колір хедера  #FFFFFF */
-/* колір футера  #2F303A */
-
-/* portfolio */
-
-/* button active #2196F3, #FFFFFF */
-/* button noactive #F5F4FA, #212121 */
-
-/* section  */
-/* h #212121 */
-/* p #757575 */
-
 :root {
+	--logo-style: 
 	--primary-text-color: #212121;
 	--secondary-text-color: #757575;
+	--tertiary-text-color: #ffffff;
 	--accent-color: #2196f3;
 	--button-color: #2196f3;
 	--logo-color: #000000;
@@ -48,19 +11,11 @@
 	--section-bg-color: #f5f4fa;
 	--link-color: rgba(255, 255, 255, 0.6);
 }
+
 body {
+	font-family: "Roboto", sans-serif;
 	background-color: var(--primary-bg-color);
 	color: var(--primary-text-color);
-}
-
-.logo {
-	color: var(--accent-color);
-}
-.header-logo {
-	color: var(--logo-color);
-}
-.footer-logo {
-	color: var(--primary-bg-color);
 }
 
 .list {
@@ -71,46 +26,94 @@ body {
 	text-decoration: none;
 }
 
-/* header */
+/* -------header----------*/
 
-.header-list .link.current {
+.header-logo {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
 	color: var(--accent-color);
 }
 
-.header-list .link {
+.logo-head {
+	color: var(--logo-color);
+}
+
+.header-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 }
 
-.header-list .link:hover,
-.header-list .link:focus {
+.header-list .current {
 	color: var(--accent-color);
 }
 
-.header-contacts .link {
+.header-link:hover,
+.header-link:focus {
+	color: var(--accent-color);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.contacts-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 }
 
-.header-contacts .link:hover,
-.header-contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
 	color: var(--accent-color);
 }
 
-/* hero */
+/* -----------hero---------- */
+/* cursor: pointer */
 
-/* footer */
+/* ----------footer--------- */
 .footer {
 	background-color: var(--secondary-bg-color);
 }
 
-.address .address-location {
-	color: var(--primary-bg-color);
+.footer-logo {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: var(--accent-color);
 }
 
-.info-footer .link {
-	color: var(--link-color);
+.logo-foot {
+	color: var(--tertiary-text-color);
 }
 
-.info-footer .link:hover,
-.info-footer .link:focus {
+.footer-location {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--tertiary-text-color);
+}
+
+.footer-link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
 	color: var(--accent-color);
 }
